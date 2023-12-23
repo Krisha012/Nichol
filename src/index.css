@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+}
+
+@layer components {
+    .btn {
+        @apply inline-block py-4 px-7 font-semibold;
+    }
+    .btn-purple {
+        @apply bg-purple-500 hover:bg-purple-400 text-white cursor-pointer transition-all duration-300 ease-in-out;
+    }
+    .btn-outline-white {
+        @apply bg-white hover:bg-black border-2 border-gray/[12%] hover:text-white cursor-pointer transition-all duration-300 ease-in-out;
+    }
+}
+
+.active {
+    color: #994ff5;
+}
+.slick-slide > div {
+    margin: 0 10px;
+}
